@@ -25,7 +25,7 @@
         {% endfor %}
 
         <li>
-            <a href="{{ translatedUrl }}">{{ lgg.label }}</a>
+            <a href="{{ translatedUrl | url }}">{{ lgg.label }}</a>
         </li>
 
         {% if loop.last %}</ul>{% endif %}
