@@ -1,7 +1,8 @@
+{% set otherLang = "fr" if locale == "en" else "en" %}
 <header>
     <h2>{{ header[locale].heading }}</h2>
 
-    <section>
+    <section  lang="{{ otherLang }}">
         {# loop though site.languages #}
         {% for lgg in site.languages %}
         {% if loop.first %}<ul>{% endif %}
@@ -9,8 +10,8 @@
         {# set translatedUrl to the homepage of that language by default #}
         {% set translatedUrl = "/" + lgg.code + "/" %}
 
-        {# set current language class #}
-        {% set activeClass = "is-active" if lgg.code == locale else "" %}
+        {# Only render opposite language link #}
+        {% if lgg.code != locale %}
 
         {# loop through all the content of the site #}
         {% for item in collections.all %}
@@ -27,6 +28,8 @@
         <li>
             <a href="{{ translatedUrl | url }}">{{ lgg.label }}</a>
         </li>
+
+        {% endif %}
 
         {% if loop.last %}</ul>{% endif %}
         {% endfor %}
