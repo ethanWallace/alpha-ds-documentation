@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   return {
-    pathPrefix: "/alpha-ds-documentation/",
+    pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {
       input: "src",
       output: "public"
