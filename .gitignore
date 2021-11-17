@@ -7,5 +7,6 @@ node_modules/
 
 # Ignore output folder
 public/
+_site/
 
 package-lock.json
