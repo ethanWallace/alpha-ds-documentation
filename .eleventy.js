@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
     pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {
       input: "src",
-      output: "_site"
+      output: "public"
     },
   };
 };
