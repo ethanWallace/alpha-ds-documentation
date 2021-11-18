@@ -6,6 +6,8 @@
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <link href="./admin/config.yml" type="text/yaml" rel="cms-config-url">
     </head>
     <body>
         
@@ -109,8 +111,6 @@ Design system FR
     <a href="/alpha-ds-documentation/fr/components/">Components Fr</a><ul>
             
         
-            
-        
             <li>
     <a href="/alpha-ds-documentation/fr/components/alerts/">Alerts FR</a></li>
         </ul></li></ul>
@@ -126,5 +126,16 @@ Design system FR
         <footer>
     <h2>French footer</h2>
 </footer>
+        <script>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                    });
+                }
+                });
+            }
+            </script>
     </body>
 </html>
