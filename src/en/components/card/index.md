@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Card
 eleventyNavigation:
   key: card
-  parent: component
+  parent: components
   title: Card
 ---
 ## Card document
