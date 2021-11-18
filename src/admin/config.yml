@@ -18,6 +18,6 @@ collections:
           - {label: "Key", name: "key", widget: "string"}
           - {label: "Parent", name: "parent", widget: "string"}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Locale", name: "locale", widget: "hidden", default: "en"}
+          - {label: "Locale", name: "locale", widget: "string", default: "en"}
       - {label: "Body", name: "body", widget: "markdown"}
     meta: { path: { label: Parent, widget: parent, index_file: 'index' } }
