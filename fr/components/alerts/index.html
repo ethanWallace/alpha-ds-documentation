@@ -6,6 +6,8 @@
         <title>Alerts</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <link href="./admin/config.yml" type="text/yaml" rel="cms-config-url">
     </head>
     <body>
         
@@ -27,8 +29,6 @@
         
 
             
-            
-                
             
 
         
@@ -76,7 +76,7 @@
         
 
         <li>
-            <a href="/alpha-ds-documentation/en/components/card/">English</a>
+            <a href="/alpha-ds-documentation/en/components/alerts/">English</a>
         </li>
 
         
@@ -125,5 +125,16 @@ Design system FR
         <footer>
     <h2>French footer</h2>
 </footer>
+        <script>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                    });
+                }
+                });
+            }
+            </script>
     </body>
 </html>
