@@ -1,6 +1,6 @@
 # Alpha Design System Documentation Site
 
-Expermental design system documentation website built with [11ty](https://www.11ty.dev/docs/) and [NetlifyCMS](https://docs.netlify.com/).
+Experimental design system documentation website built with [11ty](https://www.11ty.dev/docs/) and [NetlifyCMS](https://docs.netlify.com/).
 
 ## Local installation
 
