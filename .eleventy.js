@@ -5,6 +5,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/style.css");
+  eleventyConfig.addPassthroughCopy("./src/admin/");
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // date filter (localized)
@@ -30,7 +31,7 @@ module.exports = function (eleventyConfig) {
     pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {
       input: "src",
-      output: "public"
+      output: "_site"
     },
   };
 };
