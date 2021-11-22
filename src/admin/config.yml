@@ -18,9 +18,9 @@ collections:
         required: false
         hint: "Navigation setup"
         fields:
-          - {label: "Key", name: "key", widget: "string"}
+          - {label: "Key", name: "key", widget: "string", required: false}
           - {label: "Parent", name: "parent", widget: "string", required: false}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "string", required: false}
           - {label: "Locale", name: "locale", widget: "hidden", default: "en"}
           - {label: "Order", name: "order", widget: "number", value_type: "int", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -40,9 +40,9 @@ collections:
         required: false
         hint: "Navigation setup"
         fields:
-          - {label: "Key", name: "key", widget: "string"}
+          - {label: "Key", name: "key", widget: "string", required: false}
           - {label: "Parent", name: "parent", widget: "string", required: false}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "string", required: false}
           - {label: "Locale", name: "locale", widget: "hidden", default: "fr"}
           - {label: "Order", name: "order", widget: "number", value_type: "int", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
