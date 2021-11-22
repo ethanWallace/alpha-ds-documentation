@@ -15,15 +15,15 @@ Each page has [Frontmatter](https://www.scribendi.com/academy/articles/front_mat
 
 Available frontmatter options:
 
-- **title**: Name of the page. This is a required field.
-- **layout**: Chosen template layout. This is a required field.
-- ***translationKey**: Unique key to link to French page.
-- **eleventyNavigation**: Object to place page into main navigation. Don't include if the current page doesn't need to be in the main navigation.
-    - **key**: Unique key for navigation
-    - **parent**: Parent node's key. Leave blank to create a top level link.
-    - **title**: Text for navigation link.
-    - **locale**: Language key to dictate which language the navigation item is available in. Expects **en** or **fr**.
-    - **samePage**: Object to render same page links for page in main navigation. 
-        -**0**: samePage key. Increment by 1 for each additional link.
-            -**title**: Text for navigation link.
-            -**url**: Anchor id on page.
+- `title`: Name of the page. This is a required field.
+- `layout`: Chosen template layout. This is a required field.
+- `translationKey`: Unique key to link to French page.
+- `eleventyNavigation`: Object to place page into main navigation. Don't include if the current page doesn't need to be in the main navigation.
+    - `key`: Unique key for navigation
+    - `parent`: Parent node's key. Leave blank to create a top level link.
+    - `title`: Text for navigation link.
+    - `locale`: Language key to dictate which language the navigation item is available in. Expects **en** or **fr**.
+    - `samePage`: Object to render same page links for page in main navigation. 
+        -`0`: samePage key. Increment by 1 for each additional link.
+            -`title`: Text for navigation link.
+            -`url`: Anchor id on page.
