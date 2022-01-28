@@ -21,4 +21,4 @@ eleventyNavigation:
 
 ### heading 3
 
-[Test link]({{ "/en/get-started" }})
+[Test link]({{ "/en/get-started" | url }})
